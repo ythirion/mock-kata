@@ -25,7 +25,7 @@ public class currency_converter_should {
     }
 
     @Nested
-    public class throws_an_illegal_argument_exception_when {
+    public class throw_an_illegal_argument_exception_when {
         @Test
         public void currency_is_not_found() {
             when(changeRateService.getChangeRate(anyString(), anyString())).thenThrow(new IllegalArgumentException("Currency not found"));
